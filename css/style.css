@@ -1,0 +1,227 @@
+* {
+  font-family: 'Lato', sans-serif; }
+
+div.navbar {
+  height: 68px;
+  background: #fff;
+  border-bottom: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1000; }
+  @media screen and (max-width: 768px) {
+    div.navbar {
+      height: 60px; } }
+  div.navbar .navbar-header {
+    margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      div.navbar .navbar-header {
+        height: 60px; } }
+    @media screen and (max-width: 768px) {
+      div.navbar .navbar-header .navbar-brand {
+        width: 100%;
+        display: inline-block; } }
+    div.navbar .navbar-header .navbar-brand img {
+      width: 100px; }
+      @media screen and (max-width: 768px) {
+        div.navbar .navbar-header .navbar-brand img {
+          margin: auto; } }
+    div.navbar .navbar-header button.navbar-toggle {
+      margin-top: 16px;
+      border-radius: 0;
+      border: 2px solid #48AF4A; }
+      @media screen and (max-width: 768px) {
+        div.navbar .navbar-header button.navbar-toggle {
+          margin-top: 10px;
+          position: absolute;
+          top: 2px;
+          right: 0; } }
+      div.navbar .navbar-header button.navbar-toggle span.icon-bar {
+        background-color: #48AF4A; }
+  div.navbar .navbar-collapse {
+    background: #fff; }
+    @media screen and (max-width: 768px) {
+      div.navbar .navbar-collapse {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); } }
+    @media screen and (max-width: 768px) {
+      div.navbar .navbar-collapse div.navbar-right {
+        padding: 0;
+        border-top: 1px solid #48AF4A; } }
+    div.navbar .navbar-collapse div.navbar-right .btn-gabung {
+      margin-top: 15px; }
+      @media screen and (max-width: 768px) {
+        div.navbar .navbar-collapse div.navbar-right .btn-gabung {
+          margin-top: 10px;
+          padding: 0 20px; } }
+      div.navbar .navbar-collapse div.navbar-right .btn-gabung a {
+        border-radius: 3px;
+        border: 2px solid #48AF4A;
+        padding: 0;
+        padding-right: 20px; }
+        div.navbar .navbar-collapse div.navbar-right .btn-gabung a span.icon {
+          display: inline-block;
+          font-size: 12px;
+          padding: 0px;
+          background: #48AF4A; }
+          div.navbar .navbar-collapse div.navbar-right .btn-gabung a span.icon span.fa {
+            padding: 10px 20px;
+            color: #fff; }
+        div.navbar .navbar-collapse div.navbar-right .btn-gabung a span.text {
+          text-transform: uppercase;
+          font-weight: 900;
+          padding: 10px;
+          color: #48AF4A;
+          padding-right: 0; }
+    div.navbar .navbar-collapse ul {
+      margin-top: 0; }
+  div.navbar .navbar-nav > li > a {
+    padding-top: 24px;
+    padding-bottom: 22px;
+    color: #333; }
+    @media screen and (max-width: 768px) {
+      div.navbar .navbar-nav > li > a {
+        padding: 10px; } }
+
+.title-how-to {
+  color: #b62025;
+  text-align: center;
+  font-size: 14px;
+  margin: 50px 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .title-how-to::after {
+    content: "";
+    display: block;
+    width: 7%;
+    height: 2px;
+    background: #b62025;
+    margin: 10px auto; }
+
+.device {
+  margin: auto;
+  position: relative;
+  top: 30px;
+  min-height: 676px;
+  width: 359px;
+  background: url("../assets/bg-header-slider.png");
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 768px) {
+    .device {
+      width: 286px;
+      min-height: 550px;
+      background-size: 100%; } }
+  .device .device-content {
+    position: absolute;
+    top: 115px;
+    left: 55px;
+    width: 247px;
+    height: 376px;
+    background: rgba(0, 0, 0, 0.3); }
+    @media screen and (max-width: 768px) {
+      .device .device-content {
+        left: 43px;
+        width: 200px;
+        top: 89px;
+        height: 359px; } }
+    .device .device-content img {
+      width: 247px;
+      height: 444px; }
+      @media screen and (max-width: 768px) {
+        .device .device-content img {
+          width: 200px;
+          height: 359px; } }
+    .device .device-content ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .device .device-content .showcase-slider .flickity-page-dots {
+      bottom: 20px; }
+
+hr.clearfix {
+  margin: 0;
+  visibility: hidden; }
+  hr.clearfix:after {
+    content: "";
+    clear: both;
+    display: block; }
+
+footer {
+  background: url("../assets/bg-footer-green@3x.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin-top: 100px;
+  padding: 40px 0;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    footer {
+      background-size: 70%;
+      padding-bottom: 100px; }
+      footer .col-xs-6 {
+        margin: 10px 0; } }
+  footer .img-logo {
+    width: 80px;
+    margin: auto;
+    display: block; }
+    @media screen and (max-width: 768px) {
+      footer .img-logo {
+        margin-bottom: 20px; } }
+  footer .menu {
+    list-style: none;
+    padding: 0; }
+    footer .menu li:nth-of-type(1) a {
+      font-weight: 900; }
+    footer .menu li a {
+      display: block;
+      padding: 5px 0;
+      color: #111; }
+  footer .social {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    float: right;
+    margin-right: 20px; }
+    @media screen and (max-width: 768px) {
+      footer .social {
+        float: none;
+        margin-right: auto;
+        text-align: center; } }
+    footer .social li {
+      display: inline-block; }
+      footer .social li a {
+        text-align: right;
+        color: #111;
+        font-size: 25px;
+        padding: 10px; }
+  footer span.copyright {
+    float: right;
+    margin-right: 10px;
+    font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      footer span.copyright {
+        text-align: center;
+        float: none;
+        display: block; } }
+  footer img.text {
+    position: absolute;
+    bottom: 29px;
+    right: 25px;
+    width: 300px; }
+    @media screen and (max-width: 768px) {
+      footer img.text {
+        width: 130px;
+        bottom: 29px;
+        right: 29px; } }
+
+
+
+
+.btn-download {
+  width: 34px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #ffcd2e;
+  margin-left: 40px;
+}     
+
+/*# sourceMappingURL=style.css.map */

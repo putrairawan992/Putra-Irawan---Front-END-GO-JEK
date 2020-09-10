@@ -1,0 +1,259 @@
+$navbar-height:68px;
+$green:#48AF4A;
+$red:#b62025;
+* {
+	font-family: 'Lato', sans-serif;
+}
+@mixin w768 {	
+	@media screen and (max-width: 768px) {
+	    @content;
+	}
+}
+
+div.navbar {
+	height:$navbar-height;
+	background: #fff;
+	border-bottom: none;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+	z-index:1000;
+	@include w768 {
+		height:60px;
+	}
+	.navbar-header {
+		margin-bottom: 0;
+		@include w768 {
+			height:60px;
+		}
+		.navbar-brand {
+			@include w768 {
+				width:100%;
+				display: inline-block;
+			}
+			img {
+				width:100px;
+				@include w768 {
+					margin:auto;
+				}
+			}
+		}
+		button.navbar-toggle {
+			margin-top:16px;
+			border-radius: 0;
+			border:2px solid $green;
+			@include w768 {
+				margin-top: 10px;
+				position: absolute;
+				top:2px;
+				right:0;
+				// height:40px;
+			}
+			span.icon-bar {
+				background-color:$green;
+			}
+		}
+	}
+	
+
+	
+	.navbar-collapse {
+		// margin-top:15px;
+		background:#fff;
+		@include w768 {
+			// padding:0;
+			box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+		}
+		div.navbar-right {
+			// margin-right: 20px;
+			@include w768 {
+				padding:0;
+				border-top:1px solid $green;
+			}
+			.btn-gabung {
+				margin-top:15px;
+				@include w768 {
+					margin-top:10px;
+					padding:0 20px;
+				}
+				a {
+					border-radius: 3px;
+					border:2px solid #48AF4A;
+					padding:0;
+					padding-right:20px;
+					span.icon {
+						display: inline-block;
+						font-size:12px;
+						padding: 0px;
+						background: #48AF4A;
+						span.fa {
+							padding:10px 20px;
+							color:#fff;
+						}
+					}
+					span.text {
+						text-transform: uppercase;
+						font-weight: 900;
+						padding:10px;
+						color:#48AF4A;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+		ul {
+			margin-top:0;
+		}
+	}
+	.navbar-nav>li>a {
+		padding-top: 24px;
+    	padding-bottom: 22px;
+    	color:#333;
+    	@include w768 {
+    		padding:10px;
+    	}
+	}
+}
+
+.title-how-to {
+	color:$red;
+	text-align: center;
+	font-size:14px;
+	margin:50px 0;
+	margin-bottom: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+	&::after {
+		content: "";
+	    display: block;
+	    width: 7%;
+	    height: 2px;
+	    background: #b62025;
+	    margin: 10px auto;
+	}
+}
+.device {
+	margin:auto;
+	position: relative;
+	top: 30px;
+    min-height: 676px;
+    width: 359px;
+    background: url('../assets/bg-header-slider.png');
+    background-repeat: no-repeat;
+    @include w768 {
+    	width:286px;
+    	min-height: 550px;
+    	background-size:100%;
+    }
+    .device-content {
+		position: absolute;
+		top: 115px;
+		left: 55px;
+		width: 247px;
+		height: 376px;
+		background: rgba(0, 0, 0, 0.3);
+		@include w768 {
+			left:43px;
+			width:200px;
+			top:89px;
+			height:359px;
+		}
+		img {
+			width: 247px;
+	    	height: 444px;
+	    	@include w768 {
+	    		width:200px;
+	    		height:359px;
+	    	}
+		}
+		ul {
+			margin: 0;
+		    padding: 0;
+		    list-style: none;
+		}
+		.showcase-slider .flickity-page-dots{
+			bottom: 20px;
+		}
+	}
+}
+
+@mixin clearfix{
+	&:after {
+		content:"";
+		clear: both;
+		display: block;
+	}
+}
+hr.clearfix {
+	@include clearfix;
+	margin:0;
+	visibility: hidden;
+}
+footer {
+	background:url('../assets/bg-footer-green@3x.png');
+	background-size:30%;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	margin-top:100px;
+	padding:40px 0;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+	@include w768 {
+		.col-xs-6 {
+			margin:10px 0;
+		}
+	}
+	.img-logo {
+		width:80px;
+		margin:auto;
+		display: block;
+		@include w768 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.menu {
+		list-style: none;
+		padding:0;
+		li {
+			&:nth-of-type(1){
+				a {
+					font-weight: 900;
+				}
+			}
+			a {
+				display: block;
+				padding:5px 0;
+				color:#111;
+			}
+		}
+	}
+	.social {
+		list-style: none;
+		padding:0;
+		margin-bottom: 0;
+		float:right;
+		margin-right: 20px;
+		@include w768 {
+			float:none;
+			margin-right:auto;
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			a {
+				text-align: right;
+				color:#111;
+				font-size: 25px;
+				padding:10px;
+			}
+		}
+	}
+	span.copyright{
+		float: right;
+		margin-right: 20px;
+		font-weight: 600;
+		@include w768 {
+			text-align: center;
+			float:none;
+			display: block;
+		}
+	}
+}
